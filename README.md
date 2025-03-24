@@ -27,7 +27,7 @@ This project implements a **Virtual Power Plant** system using **Spring Boot**. 
 
 ### Clone the Repository
 
-```git clone <repository-url>```
+```git clone [<repository-url>](https://github.com/ManojKC123/virtual_power_pant_system/tree/master)```
 
 ### Build and Run the Application
 Navigate to the project directory:

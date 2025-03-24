@@ -16,6 +16,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 @Service
@@ -27,6 +31,12 @@ public class BatteryImp implements BatteryService {
     private final BatteryRepository batteryRepository;
     private final ModelMapper modelMapper;
 
+    // Thread-safe counter
+    private final AtomicInteger registrationCount = new AtomicInteger(0);
+
+    // ExecutorService to manage concurrent tasks
+    private final ExecutorService executorService = Executors.newFixedThreadPool(10); // Customize number of threads
+
     @Transactional
     public BatteryDTO save(BatteryDTO batteryDTO) {
         logger.info("Attempting to save battery with name: {}", batteryDTO.getName());
@@ -36,12 +46,26 @@ public class BatteryImp implements BatteryService {
             throw new IllegalArgumentException("Battery with the same name already exists");
         }
 
-        Battery battery = modelMapper.map(batteryDTO, Battery.class);
-        Battery savedBattery = batteryRepository.save(battery);
+        // Offload the battery saving operation to a separate thread for concurrency
+        Future<BatteryDTO> futureResult = executorService.submit(() -> {
+            Battery battery = modelMapper.map(batteryDTO, Battery.class);
+            Battery savedBattery = batteryRepository.save(battery);
 
-        logger.info("Successfully saved battery with ID: {}", savedBattery.getId());
-        return modelMapper.map(savedBattery, BatteryDTO.class);
+            // Increment the registration count atomically
+            int currentCount = registrationCount.incrementAndGet();
+            logger.info("Successfully saved battery with ID: {}. Registration count: {}", savedBattery.getId(), currentCount);
+
+            return modelMapper.map(savedBattery, BatteryDTO.class);
+        });
+        // Wait for the asynchronous task to finish and get the result
+        try {
+            return futureResult.get();  // This will block until the result is available
+        } catch (Exception e) {
+            logger.error("Error saving battery: {}", e.getMessage());
+            throw new RuntimeException("Error saving battery", e);
+        }
     }
+
 
     @Override
     public List<BatteryDTO> getAll() {

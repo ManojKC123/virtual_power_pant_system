@@ -1,11 +1,10 @@
 package com.example.VirtualPowerPlant.controller;
 
-
-
 import static org.mockito.Mockito.*;
 import com.example.VirtualPowerPlant.dto.BatteryDTO;
 import com.example.VirtualPowerPlant.service.BatteryService;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -85,6 +84,47 @@ class VirtualPowerPlantControllerTest {
 
         // Verify that batteryService.getAll() was called once
         verify(batteryService, times(1)).getAll();
+    }
+
+
+    @Test
+    @DisplayName("Test getBatteriesInRange - Success")
+    void testGetBatteriesInRange_Success() throws Exception {
+        when(batteryService.findByPostcodeAndCapacityRange(anyInt(), anyInt(), anyInt(), anyInt()))
+                .thenReturn(List.of(batteryDTO1, batteryDTO2));
+
+        when(batteryService.getTotalCapacity(any())).thenReturn(500);
+        when(batteryService.getAverageCapacity(any())).thenReturn(500.0);
+
+        mockMvc.perform(get("/batteries/range")
+                        .param("startPostCode", "12300")
+                        .param("endPostCode", "12400")
+                        .param("startCapacity", "100")
+                        .param("endCapacity", "1000"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.batteries[0]").value("Test Battery 1"))
+                .andExpect(jsonPath("$.totalCapacity").value(500))
+                .andExpect(jsonPath("$.averageCapacity").value(500.0));
+    }
+
+    @Test
+    @DisplayName("Test getBatteriesInRange - Invalid Postcode")
+    void testGetBatteriesInRange_InvalidPostcode() throws Exception {
+        mockMvc.perform(get("/batteries/range")
+                        .param("startPostCode", "abc") // Invalid postcode
+                        .param("endPostCode", "12400"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.error").value("Start postcode and end postcode must be valid integers"));
+    }
+
+    @Test
+    @DisplayName("Test getBatteriesInRange - Start > End Postcode")
+    void testGetBatteriesInRange_StartGreaterThanEndPostcode() throws Exception {
+        mockMvc.perform(get("/batteries/range")
+                        .param("startPostCode", "12400")
+                        .param("endPostCode", "12300"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.error").value("Start postcode must be less than or equal to end postcode"));
     }
 }
 

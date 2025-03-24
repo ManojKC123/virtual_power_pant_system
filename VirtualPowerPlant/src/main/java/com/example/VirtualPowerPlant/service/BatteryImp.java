@@ -72,8 +72,6 @@ public class BatteryImp implements BatteryService {
                 startPostcode, endPostcode, startCapacity, endCapacity);
 
         List<Battery> batteries = batteryRepository.findByPostcodeAndCapacityRange(startPostcode, endPostcode, startCapacity, endCapacity);
-        System.out.println(batteries.toString());
-
         logger.info("Found {} batteries matching the criteria", batteries.size());
 
         return batteries.stream()

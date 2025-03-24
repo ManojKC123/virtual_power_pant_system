@@ -1,0 +1,74 @@
+2025-03-24T11:12:25.522+05:45  INFO 22464 --- [main] c.e.V.service.BatteryServiceTest         : Starting BatteryServiceTest using Java 17.0.13 with PID 22464 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:12:25.523+05:45 DEBUG 22464 --- [main] c.e.V.service.BatteryServiceTest         : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:12:25.525+05:45  INFO 22464 --- [main] c.e.V.service.BatteryServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:12:30.113+05:45  INFO 22464 --- [main] c.e.V.service.BatteryServiceTest         : Started BatteryServiceTest in 4.97 seconds (process running for 6.015)
+2025-03-24T11:12:30.537+05:45  INFO 22464 --- [main] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Cannington
+2025-03-24T11:12:30.539+05:45  INFO 22464 --- [main] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T11:12:38.762+05:45  INFO 24928 --- [main] c.e.V.service.BatteryServiceTest         : Starting BatteryServiceTest using Java 17.0.13 with PID 24928 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:12:38.765+05:45 DEBUG 24928 --- [main] c.e.V.service.BatteryServiceTest         : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:12:38.765+05:45  INFO 24928 --- [main] c.e.V.service.BatteryServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:12:43.340+05:45  INFO 24928 --- [main] c.e.V.service.BatteryServiceTest         : Started BatteryServiceTest in 4.932 seconds (process running for 5.976)
+2025-03-24T11:12:43.857+05:45  INFO 24928 --- [main] c.e.V.service.BatteryImp                 : Fetching all batteries
+2025-03-24T11:12:50.488+05:45  INFO 7396 --- [main] c.e.V.service.BatteryServiceTest         : Starting BatteryServiceTest using Java 17.0.13 with PID 7396 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:12:50.490+05:45 DEBUG 7396 --- [main] c.e.V.service.BatteryServiceTest         : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:12:50.491+05:45  INFO 7396 --- [main] c.e.V.service.BatteryServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:12:55.062+05:45  INFO 7396 --- [main] c.e.V.service.BatteryServiceTest         : Started BatteryServiceTest in 4.94 seconds (process running for 6.008)
+2025-03-24T11:12:55.550+05:45  INFO 7396 --- [main] c.e.V.service.BatteryImp                 : Fetching batteries by postcode range: 6000-6500 and capacity range: 12000-20000
+2025-03-24T11:12:55.553+05:45  INFO 7396 --- [main] c.e.V.service.BatteryImp                 : Found 1 batteries matching the criteria
+2025-03-24T11:15:12.113+05:45  INFO 20764 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Starting VirtualPowerPlantControllerTest using Java 17.0.13 with PID 20764 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:15:12.114+05:45 DEBUG 20764 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:15:12.115+05:45  INFO 20764 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:15:16.870+05:45  INFO 20764 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Started VirtualPowerPlantControllerTest in 5.129 seconds (process running for 6.194)
+2025-03-24T11:15:17.222+05:45  INFO 20764 --- [main] c.e.V.c.VirtualPowerPlantController      : Fetching all batteries
+2025-03-24T11:15:17.227+05:45  INFO 20764 --- [main] c.e.V.service.BatteryImp                 : Fetching all batteries
+2025-03-24T11:16:28.901+05:45  INFO 23428 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Starting VirtualPowerPlantControllerTest using Java 17.0.13 with PID 23428 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:16:28.903+05:45 DEBUG 23428 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:16:28.904+05:45  INFO 23428 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:16:33.632+05:45  INFO 23428 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Started VirtualPowerPlantControllerTest in 5.096 seconds (process running for 6.188)
+2025-03-24T11:16:33.998+05:45  INFO 23428 --- [main] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T11:16:34.009+05:45  INFO 23428 --- [main] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T11:19:15.297+05:45  INFO 9296 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Starting VirtualPowerPlantControllerTest using Java 17.0.13 with PID 9296 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:19:15.300+05:45 DEBUG 9296 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:19:15.301+05:45  INFO 9296 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:19:19.882+05:45  INFO 9296 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Started VirtualPowerPlantControllerTest in 4.968 seconds (process running for 6.09)
+2025-03-24T11:19:20.329+05:45  INFO 9296 --- [main] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T11:19:20.341+05:45  INFO 9296 --- [main] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T11:21:14.789+05:45  INFO 24620 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Starting VirtualPowerPlantControllerTest using Java 17.0.13 with PID 24620 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:21:14.791+05:45 DEBUG 24620 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:21:14.791+05:45  INFO 24620 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:21:19.814+05:45  INFO 24620 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Started VirtualPowerPlantControllerTest in 5.638 seconds (process running for 6.853)
+2025-03-24T11:21:20.670+05:45  INFO 24620 --- [main] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T11:21:20.686+05:45  INFO 24620 --- [main] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T11:22:28.962+05:45  INFO 25972 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Starting VirtualPowerPlantControllerTest using Java 17.0.13 with PID 25972 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:22:28.963+05:45 DEBUG 25972 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:22:28.964+05:45  INFO 25972 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:22:33.482+05:45  INFO 25972 --- [main] c.e.V.c.VirtualPowerPlantControllerTest  : Started VirtualPowerPlantControllerTest in 4.927 seconds (process running for 6.023)
+2025-03-24T11:22:33.862+05:45  INFO 25972 --- [main] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T11:22:33.879+05:45  INFO 25972 --- [main] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T11:22:34.085+05:45  INFO 25972 --- [main] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T11:22:34.105+05:45  INFO 25972 --- [main] c.e.V.c.VirtualPowerPlantController      : Successfully added battery with name: Test Battery
+2025-03-24T11:31:38.562+05:45  INFO 25036 --- [main] c.e.V.service.BatteryServiceTest         : Starting BatteryServiceTest using Java 17.0.13 with PID 25036 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:31:38.564+05:45 DEBUG 25036 --- [main] c.e.V.service.BatteryServiceTest         : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:31:38.566+05:45  INFO 25036 --- [main] c.e.V.service.BatteryServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:31:43.168+05:45  INFO 25036 --- [main] c.e.V.service.BatteryServiceTest         : Started BatteryServiceTest in 4.988 seconds (process running for 6.067)
+2025-03-24T11:31:43.550+05:45  INFO 25036 --- [main] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Cannington
+2025-03-24T11:31:43.553+05:45  INFO 25036 --- [main] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T11:31:49.570+05:45  INFO 2208 --- [main] c.e.V.service.BatteryServiceTest         : Starting BatteryServiceTest using Java 17.0.13 with PID 2208 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:31:49.571+05:45 DEBUG 2208 --- [main] c.e.V.service.BatteryServiceTest         : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:31:49.572+05:45  INFO 2208 --- [main] c.e.V.service.BatteryServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:31:53.864+05:45  INFO 2208 --- [main] c.e.V.service.BatteryServiceTest         : Started BatteryServiceTest in 4.673 seconds (process running for 5.75)
+2025-03-24T11:31:54.216+05:45  INFO 2208 --- [main] c.e.V.service.BatteryImp                 : Fetching all batteries
+2025-03-24T11:32:01.287+05:45  INFO 21684 --- [main] c.e.V.service.BatteryServiceTest         : Starting BatteryServiceTest using Java 17.0.13 with PID 21684 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:32:01.289+05:45 DEBUG 21684 --- [main] c.e.V.service.BatteryServiceTest         : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:32:01.291+05:45  INFO 21684 --- [main] c.e.V.service.BatteryServiceTest         : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:32:05.742+05:45  INFO 21684 --- [main] c.e.V.service.BatteryServiceTest         : Started BatteryServiceTest in 4.83 seconds (process running for 5.952)
+2025-03-24T11:32:06.255+05:45  INFO 21684 --- [main] c.e.V.service.BatteryImp                 : Fetching batteries by postcode range: 6000-6500 and capacity range: 12000-20000
+2025-03-24T11:32:06.259+05:45  INFO 21684 --- [main] c.e.V.service.BatteryImp                 : Found 1 batteries matching the criteria
+2025-03-24T11:34:41.832+05:45  INFO 15244 --- [main] c.e.V.VirtualPowerPlantApplicationTests  : Starting VirtualPowerPlantApplicationTests using Java 17.0.13 with PID 15244 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:34:41.834+05:45 DEBUG 15244 --- [main] c.e.V.VirtualPowerPlantApplicationTests  : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:34:41.835+05:45  INFO 15244 --- [main] c.e.V.VirtualPowerPlantApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:34:46.405+05:45  INFO 15244 --- [main] c.e.V.VirtualPowerPlantApplicationTests  : Started VirtualPowerPlantApplicationTests in 4.98 seconds (process running for 6.043)
+2025-03-24T11:35:49.454+05:45  INFO 24076 --- [main] c.e.V.VirtualPowerPlantApplicationTests  : Starting VirtualPowerPlantApplicationTests using Java 17.0.13 with PID 24076 (started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant)
+2025-03-24T11:35:49.456+05:45 DEBUG 24076 --- [main] c.e.V.VirtualPowerPlantApplicationTests  : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T11:35:49.457+05:45  INFO 24076 --- [main] c.e.V.VirtualPowerPlantApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T11:35:54.180+05:45  INFO 24076 --- [main] c.e.V.VirtualPowerPlantApplicationTests  : Started VirtualPowerPlantApplicationTests in 5.088 seconds (process running for 6.141)

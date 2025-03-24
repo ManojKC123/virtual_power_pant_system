@@ -1,0 +1,821 @@
+2025-03-24T09:54:14.820+05:45  INFO 2296 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 2296 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T09:54:14.825+05:45 DEBUG 2296 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T09:54:14.826+05:45  INFO 2296 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T09:54:15.714+05:45  INFO 2296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24T09:54:15.846+05:45  INFO 2296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interface.
+2025-03-24T09:54:16.705+05:45  INFO 2296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-24T09:54:16.717+05:45  INFO 2296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-24T09:54:16.718+05:45  INFO 2296 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-24T09:54:16.776+05:45  INFO 2296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-24T09:54:16.777+05:45  INFO 2296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1890 ms
+2025-03-24T09:54:17.136+05:45  INFO 2296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24T09:54:17.237+05:45  INFO 2296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-24T09:54:17.268+05:45  INFO 2296 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-24T09:54:17.609+05:45  INFO 2296 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24T09:54:17.684+05:45  INFO 2296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-24T09:54:17.872+05:45  INFO 2296 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@25de8898
+2025-03-24T09:54:17.875+05:45  INFO 2296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-24T09:54:17.905+05:45  WARN 2296 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-24T09:54:17.937+05:45  INFO 2296 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24T09:54:18.884+05:45  INFO 2296 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24T09:54:18.944+05:45  INFO 2296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24T09:54:19.304+05:45  INFO 2296 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-24T09:54:19.507+05:45  WARN 2296 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-24T09:54:20.274+05:45  INFO 2296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-24T09:54:20.289+05:45  INFO 2296 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.022 seconds (process running for 6.375)
+2025-03-24T09:54:26.877+05:45  INFO 2296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-24T09:54:26.878+05:45  INFO 2296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-24T09:54:26.880+05:45  INFO 2296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-24T09:54:26.993+05:45  INFO 2296 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T09:54:27.000+05:45  INFO 2296 --- [http-nio-8080-exec-1] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T09:54:27.189+05:45  INFO 2296 --- [http-nio-8080-exec-1] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T09:54:27.214+05:45  INFO 2296 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Successfully added battery with name: Test Battery
+2025-03-24T09:54:34.625+05:45  INFO 2296 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T09:54:34.627+05:45  INFO 2296 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T09:54:34.632+05:45 ERROR 2296 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Battery with name Test Battery already exists
+2025-03-24T09:54:34.635+05:45 ERROR 2296 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Error while saving battery: Battery with the same name already exists
+2025-03-24T09:55:09.971+05:45  INFO 2296 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-24T09:55:10.060+05:45  INFO 2296 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-24T09:55:10.063+05:45  INFO 2296 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24T09:55:10.065+05:45  INFO 2296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-24T09:55:10.070+05:45  INFO 2296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-24T09:55:13.371+05:45  INFO 24056 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 24056 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T09:55:13.374+05:45 DEBUG 24056 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T09:55:13.375+05:45  INFO 24056 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T09:55:16.528+05:45  WARN 24056 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-24T09:55:17.980+05:45  WARN 24056 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-24T09:55:18.863+05:45  INFO 24056 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.032 seconds (process running for 6.385)
+2025-03-24T09:55:19.272+05:45  INFO 24056 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T09:55:19.280+05:45  INFO 24056 --- [http-nio-8080-exec-1] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T09:55:19.454+05:45  INFO 24056 --- [http-nio-8080-exec-1] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T09:55:19.472+05:45  INFO 24056 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Successfully added battery with name: Test Battery
+2025-03-24T09:55:21.198+05:45  INFO 24056 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T09:55:21.201+05:45  INFO 24056 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T09:55:21.207+05:45 ERROR 24056 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Battery with name Test Battery already exists
+2025-03-24T09:55:21.211+05:45 ERROR 24056 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Error while saving battery: Battery with the same name already exists
+2025-03-24T09:56:11.786+05:45  INFO 8264 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 8264 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T09:56:11.789+05:45 DEBUG 8264 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T09:56:11.790+05:45  INFO 8264 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T09:56:17.236+05:45  INFO 8264 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.007 seconds (process running for 6.386)
+2025-03-24T09:56:26.688+05:45  INFO 8264 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T09:56:26.696+05:45  INFO 8264 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T09:56:26.880+05:45  INFO 8264 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T09:56:26.890+05:45  INFO 8264 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Successfully added battery with name: Test Battery
+2025-03-24T09:56:28.343+05:45  INFO 8264 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T09:56:28.346+05:45  INFO 8264 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T09:56:28.352+05:45 ERROR 8264 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Battery with name Test Battery already exists
+2025-03-24T09:56:28.355+05:45 ERROR 8264 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Error while saving battery: Battery with the same name already exists
+2025-03-24T10:04:21.267+05:45  INFO 25916 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 25916 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:04:21.269+05:45 DEBUG 25916 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:04:21.269+05:45  INFO 25916 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:04:26.439+05:45  INFO 25916 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 5.725 seconds (process running for 6.137)
+2025-03-24T10:04:35.267+05:45  INFO 25916 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:04:35.275+05:45  INFO 25916 --- [http-nio-8080-exec-1] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:04:35.449+05:45  INFO 25916 --- [http-nio-8080-exec-1] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T10:04:35.458+05:45  INFO 25916 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Successfully added battery with name: Test Battery
+2025-03-24T10:04:43.243+05:45  INFO 25916 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:04:43.246+05:45  INFO 25916 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:04:43.250+05:45 ERROR 25916 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Battery with name Test Battery already exists
+2025-03-24T10:04:43.253+05:45 ERROR 25916 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Error while saving battery: Battery with the same name already exists
+2025-03-24T10:05:53.759+05:45  INFO 10592 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 10592 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:05:53.764+05:45 DEBUG 10592 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:05:53.765+05:45  INFO 10592 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:05:59.379+05:45  INFO 10592 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.226 seconds (process running for 6.6)
+2025-03-24T10:06:08.267+05:45 ERROR 10592 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:06:08.270+05:45 ERROR 10592 --- [http-nio-8080-exec-2] c.e.V.batteryUtils.BatteryUtilities      : Invalid value for End capacity: null
+2025-03-24T10:06:08.270+05:45 ERROR 10592 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Error occurred while querying batteries: End capacity must not be null or empty
+2025-03-24T10:06:18.943+05:45 ERROR 10592 --- [http-nio-8080-exec-4] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:06:18.944+05:45 ERROR 10592 --- [http-nio-8080-exec-4] c.e.V.batteryUtils.BatteryUtilities      : Invalid value for End capacity: null
+2025-03-24T10:06:18.944+05:45 ERROR 10592 --- [http-nio-8080-exec-4] c.e.V.c.VirtualPowerPlantController      : Error occurred while querying batteries: End capacity must not be null or empty
+2025-03-24T10:13:56.020+05:45  INFO 4784 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 4784 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:13:56.023+05:45 DEBUG 4784 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:13:56.024+05:45  INFO 4784 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:14:02.156+05:45  INFO 4784 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.709 seconds (process running for 7.104)
+2025-03-24T10:14:11.763+05:45 ERROR 4784 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:14:11.765+05:45 ERROR 4784 --- [http-nio-8080-exec-2] c.e.V.batteryUtils.BatteryUtilities      : Invalid integer format for End capacity: null
+2025-03-24T10:14:11.766+05:45 ERROR 4784 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Error occurred while querying batteries: End capacity must be a valid integer
+2025-03-24T10:17:34.752+05:45  INFO 18280 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 18280 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:17:34.755+05:45 DEBUG 18280 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:17:34.756+05:45  INFO 18280 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:17:39.999+05:45  INFO 18280 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 5.758 seconds (process running for 6.119)
+2025-03-24T10:17:45.581+05:45 ERROR 18280 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:17:45.596+05:45 ERROR 18280 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Error occurred while querying batteries: Cannot invoke "java.lang.Integer.intValue()" because "endCapacityInt" is null
+2025-03-24T10:18:08.246+05:45  INFO 14028 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 14028 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:18:08.248+05:45 DEBUG 14028 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:18:08.249+05:45  INFO 14028 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:18:13.850+05:45  INFO 14028 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.177 seconds (process running for 6.534)
+2025-03-24T10:18:20.224+05:45 ERROR 14028 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:18:20.231+05:45 ERROR 14028 --- [http-nio-8080-exec-2] c.e.V.batteryUtils.BatteryUtilities      : Invalid value for End capacity: null
+2025-03-24T10:18:20.232+05:45 ERROR 14028 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Error occurred while querying batteries: End capacity must not be null or empty
+2025-03-24T10:19:26.445+05:45  INFO 2468 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 2468 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:19:26.448+05:45 DEBUG 2468 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:19:26.449+05:45  INFO 2468 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:19:31.889+05:45  INFO 2468 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 5.989 seconds (process running for 6.374)
+2025-03-24T10:19:32.688+05:45 ERROR 2468 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:19:32.690+05:45 ERROR 2468 --- [http-nio-8080-exec-1] c.e.V.batteryUtils.BatteryUtilities      : Invalid value for End capacity: null
+2025-03-24T10:19:32.691+05:45 ERROR 2468 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Error occurred while querying batteries: End capacity must not be null or empty
+2025-03-24T10:21:48.139+05:45  INFO 19716 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 19716 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:21:48.141+05:45 DEBUG 19716 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:21:48.142+05:45  INFO 19716 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:21:53.589+05:45  INFO 19716 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 5.996 seconds (process running for 6.394)
+2025-03-24T10:22:07.745+05:45  INFO 20812 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 20812 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:22:07.749+05:45 DEBUG 20812 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:22:07.751+05:45  INFO 20812 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:22:13.440+05:45  INFO 20812 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.327 seconds (process running for 6.709)
+2025-03-24T10:22:20.457+05:45 ERROR 20812 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:22:20.460+05:45 ERROR 20812 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Start capacity 12 is greater than end capacity 0
+2025-03-24T10:22:53.356+05:45 ERROR 20812 --- [http-nio-8080-exec-4] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:22:53.357+05:45  INFO 20812 --- [http-nio-8080-exec-4] c.e.V.service.BatteryImp                 : Fetching batteries by postcode range: 2000-1000 and capacity range: 12-13
+2025-03-24T10:22:53.467+05:45  INFO 20812 --- [http-nio-8080-exec-4] c.e.V.service.BatteryImp                 : Found 0 batteries matching the criteria
+2025-03-24T10:22:53.468+05:45  INFO 20812 --- [http-nio-8080-exec-4] c.e.V.c.VirtualPowerPlantController      : No batteries found within the specified range
+2025-03-24T10:23:33.859+05:45  INFO 8152 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 8152 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:23:33.861+05:45 DEBUG 8152 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:23:33.862+05:45  INFO 8152 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:23:40.129+05:45  INFO 8152 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.824 seconds (process running for 7.245)
+2025-03-24T10:23:41.574+05:45 ERROR 8152 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:23:41.578+05:45  INFO 8152 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Fetching batteries by postcode range: 2000-1000 and capacity range: 12-13
+2025-03-24T10:23:41.669+05:45  INFO 8152 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Found 0 batteries matching the criteria
+2025-03-24T10:23:41.669+05:45  INFO 8152 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : No batteries found within the specified range
+2025-03-24T10:23:51.593+05:45 ERROR 8152 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:23:51.595+05:45 ERROR 8152 --- [http-nio-8080-exec-3] c.e.V.batteryUtils.BatteryUtilities      : Invalid integer format for End capacity: -
+2025-03-24T10:23:51.596+05:45 ERROR 8152 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Error occurred while querying batteries: End capacity must be a valid integer
+2025-03-24T10:23:57.974+05:45 ERROR 8152 --- [http-nio-8080-exec-5] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:23:57.975+05:45 ERROR 8152 --- [http-nio-8080-exec-5] c.e.V.c.VirtualPowerPlantController      : Start capacity 12 is greater than end capacity 0
+2025-03-24T10:24:10.067+05:45 ERROR 8152 --- [http-nio-8080-exec-7] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:24:10.067+05:45 ERROR 8152 --- [http-nio-8080-exec-7] c.e.V.batteryUtils.BatteryUtilities      : Invalid integer format for End capacity: null
+2025-03-24T10:24:10.068+05:45 ERROR 8152 --- [http-nio-8080-exec-7] c.e.V.c.VirtualPowerPlantController      : Error occurred while querying batteries: End capacity must be a valid integer
+2025-03-24T10:26:14.968+05:45  INFO 13116 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 13116 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:26:14.971+05:45 DEBUG 13116 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:26:14.972+05:45  INFO 13116 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:26:20.492+05:45  INFO 13116 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.076 seconds (process running for 6.444)
+2025-03-24T10:26:28.733+05:45 ERROR 13116 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Start postcode 2000 is greater than end postcode 1000
+2025-03-24T10:26:47.695+05:45  INFO 13116 --- [http-nio-8080-exec-4] c.e.V.service.BatteryImp                 : Fetching batteries by postcode range: 1000-3000 and capacity range: 12-2147483647
+2025-03-24T10:26:47.784+05:45  INFO 13116 --- [http-nio-8080-exec-4] c.e.V.service.BatteryImp                 : Found 0 batteries matching the criteria
+2025-03-24T10:26:47.786+05:45  INFO 13116 --- [http-nio-8080-exec-4] c.e.V.c.VirtualPowerPlantController      : No batteries found within the specified range
+2025-03-24T10:27:01.803+05:45  INFO 13116 --- [http-nio-8080-exec-5] c.e.V.service.BatteryImp                 : Fetching batteries by postcode range: 1000-3000 and capacity range: 12-2147483647
+2025-03-24T10:27:01.841+05:45  INFO 13116 --- [http-nio-8080-exec-5] c.e.V.service.BatteryImp                 : Found 4 batteries matching the criteria
+2025-03-24T10:27:01.894+05:45  INFO 13116 --- [http-nio-8080-exec-5] c.e.V.c.VirtualPowerPlantController      : Found 4 batteries in the specified range
+2025-03-24T10:27:01.896+05:45  INFO 13116 --- [http-nio-8080-exec-5] c.e.V.service.BatteryImp                 : Calculating total capacity for 4 batteries
+2025-03-24T10:27:01.900+05:45  INFO 13116 --- [http-nio-8080-exec-5] c.e.V.service.BatteryImp                 : Calculating average capacity for 4 batteries
+2025-03-24T10:29:08.781+05:45  INFO 13116 --- [http-nio-8080-exec-7] c.e.V.service.BatteryImp                 : Fetching batteries by postcode range: 1000-3000 and capacity range: 14000-2147483647
+2025-03-24T10:29:08.794+05:45  INFO 13116 --- [http-nio-8080-exec-7] c.e.V.service.BatteryImp                 : Found 0 batteries matching the criteria
+2025-03-24T10:29:08.795+05:45  INFO 13116 --- [http-nio-8080-exec-7] c.e.V.c.VirtualPowerPlantController      : No batteries found within the specified range
+2025-03-24T10:29:23.029+05:45  INFO 13116 --- [http-nio-8080-exec-9] c.e.V.service.BatteryImp                 : Fetching batteries by postcode range: 1000-3000 and capacity range: 0-14000
+2025-03-24T10:29:23.042+05:45  INFO 13116 --- [http-nio-8080-exec-9] c.e.V.service.BatteryImp                 : Found 4 batteries matching the criteria
+2025-03-24T10:29:23.044+05:45  INFO 13116 --- [http-nio-8080-exec-9] c.e.V.c.VirtualPowerPlantController      : Found 4 batteries in the specified range
+2025-03-24T10:29:23.045+05:45  INFO 13116 --- [http-nio-8080-exec-9] c.e.V.service.BatteryImp                 : Calculating total capacity for 4 batteries
+2025-03-24T10:29:23.047+05:45  INFO 13116 --- [http-nio-8080-exec-9] c.e.V.service.BatteryImp                 : Calculating average capacity for 4 batteries
+2025-03-24T10:29:29.899+05:45  INFO 13116 --- [http-nio-8080-exec-10] c.e.V.service.BatteryImp                 : Fetching batteries by postcode range: 1000-3000 and capacity range: 0-13000
+2025-03-24T10:29:29.909+05:45  INFO 13116 --- [http-nio-8080-exec-10] c.e.V.service.BatteryImp                 : Found 0 batteries matching the criteria
+2025-03-24T10:29:29.909+05:45  INFO 13116 --- [http-nio-8080-exec-10] c.e.V.c.VirtualPowerPlantController      : No batteries found within the specified range
+2025-03-24T10:43:57.633+05:45  INFO 2100 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 2100 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:43:57.636+05:45 DEBUG 2100 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:43:57.638+05:45  INFO 2100 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:44:03.378+05:45  INFO 2100 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.308 seconds (process running for 6.655)
+2025-03-24T10:44:10.519+05:45  INFO 2100 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:44:10.528+05:45  INFO 2100 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:44:10.871+05:45  INFO 2100 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T10:44:10.882+05:45 ERROR 2100 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Failed to instantiate instance of destination com.example.VirtualPowerPlant.dto.BatteryDTO. Ensure that com.example.VirtualPowerPlant.dto.BatteryDTO has a non-private no-argument constructor.
+
+1 error] with root cause
+
+java.lang.NoSuchMethodException: com.example.VirtualPowerPlant.dto.BatteryDTO.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3585) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[na:na]
+	at org.modelmapper.internal.MappingEngineImpl.instantiate(MappingEngineImpl.java:339) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.createDestination(MappingEngineImpl.java:354) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.typeMap(MappingEngineImpl.java:141) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:115) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:72) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.mapInternal(ModelMapper.java:589) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:422) ~[modelmapper-3.2.1.jar:na]
+	at com.example.VirtualPowerPlant.service.BatteryImp.save(BatteryImp.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar:6.2.5]
+	at com.example.VirtualPowerPlant.service.BatteryImp$$SpringCGLIB$$0.save(<generated>) ~[classes/:na]
+	at com.example.VirtualPowerPlant.controller.VirtualPowerPlantController.addBattery(VirtualPowerPlantController.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-03-24T10:44:12.570+05:45  INFO 2100 --- [http-nio-8080-exec-4] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:44:12.574+05:45  INFO 2100 --- [http-nio-8080-exec-4] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:44:12.582+05:45  INFO 2100 --- [http-nio-8080-exec-4] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 2
+2025-03-24T10:44:12.592+05:45 ERROR 2100 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Failed to instantiate instance of destination com.example.VirtualPowerPlant.dto.BatteryDTO. Ensure that com.example.VirtualPowerPlant.dto.BatteryDTO has a non-private no-argument constructor.
+
+1 error] with root cause
+
+java.lang.NoSuchMethodException: com.example.VirtualPowerPlant.dto.BatteryDTO.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3585) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[na:na]
+	at org.modelmapper.internal.MappingEngineImpl.instantiate(MappingEngineImpl.java:339) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.createDestination(MappingEngineImpl.java:354) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.typeMap(MappingEngineImpl.java:141) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:106) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:72) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.mapInternal(ModelMapper.java:589) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:422) ~[modelmapper-3.2.1.jar:na]
+	at com.example.VirtualPowerPlant.service.BatteryImp.save(BatteryImp.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar:6.2.5]
+	at com.example.VirtualPowerPlant.service.BatteryImp$$SpringCGLIB$$0.save(<generated>) ~[classes/:na]
+	at com.example.VirtualPowerPlant.controller.VirtualPowerPlantController.addBattery(VirtualPowerPlantController.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-03-24T10:44:13.749+05:45  INFO 2100 --- [http-nio-8080-exec-5] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:44:13.753+05:45  INFO 2100 --- [http-nio-8080-exec-5] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:44:13.766+05:45  INFO 2100 --- [http-nio-8080-exec-5] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 3
+2025-03-24T10:44:13.771+05:45 ERROR 2100 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Failed to instantiate instance of destination com.example.VirtualPowerPlant.dto.BatteryDTO. Ensure that com.example.VirtualPowerPlant.dto.BatteryDTO has a non-private no-argument constructor.
+
+1 error] with root cause
+
+java.lang.NoSuchMethodException: com.example.VirtualPowerPlant.dto.BatteryDTO.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3585) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[na:na]
+	at org.modelmapper.internal.MappingEngineImpl.instantiate(MappingEngineImpl.java:339) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.createDestination(MappingEngineImpl.java:354) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.typeMap(MappingEngineImpl.java:141) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:106) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:72) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.mapInternal(ModelMapper.java:589) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:422) ~[modelmapper-3.2.1.jar:na]
+	at com.example.VirtualPowerPlant.service.BatteryImp.save(BatteryImp.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar:6.2.5]
+	at com.example.VirtualPowerPlant.service.BatteryImp$$SpringCGLIB$$0.save(<generated>) ~[classes/:na]
+	at com.example.VirtualPowerPlant.controller.VirtualPowerPlantController.addBattery(VirtualPowerPlantController.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-03-24T10:44:14.948+05:45  INFO 2100 --- [http-nio-8080-exec-8] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:44:14.953+05:45  INFO 2100 --- [http-nio-8080-exec-8] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:44:14.961+05:45  INFO 2100 --- [http-nio-8080-exec-8] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 4
+2025-03-24T10:44:14.964+05:45 ERROR 2100 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Failed to instantiate instance of destination com.example.VirtualPowerPlant.dto.BatteryDTO. Ensure that com.example.VirtualPowerPlant.dto.BatteryDTO has a non-private no-argument constructor.
+
+1 error] with root cause
+
+java.lang.NoSuchMethodException: com.example.VirtualPowerPlant.dto.BatteryDTO.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3585) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[na:na]
+	at org.modelmapper.internal.MappingEngineImpl.instantiate(MappingEngineImpl.java:339) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.createDestination(MappingEngineImpl.java:354) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.typeMap(MappingEngineImpl.java:141) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:106) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:72) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.mapInternal(ModelMapper.java:589) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:422) ~[modelmapper-3.2.1.jar:na]
+	at com.example.VirtualPowerPlant.service.BatteryImp.save(BatteryImp.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar:6.2.5]
+	at com.example.VirtualPowerPlant.service.BatteryImp$$SpringCGLIB$$0.save(<generated>) ~[classes/:na]
+	at com.example.VirtualPowerPlant.controller.VirtualPowerPlantController.addBattery(VirtualPowerPlantController.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-03-24T10:44:35.500+05:45  INFO 5536 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 5536 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:44:35.503+05:45 DEBUG 5536 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:44:35.504+05:45  INFO 5536 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:44:40.811+05:45  INFO 5536 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 5.882 seconds (process running for 6.23)
+2025-03-24T10:44:50.900+05:45  INFO 5536 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:44:50.908+05:45  INFO 5536 --- [http-nio-8080-exec-1] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:44:51.079+05:45  INFO 5536 --- [http-nio-8080-exec-1] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T10:44:51.099+05:45  INFO 5536 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Successfully added battery with name: Test Battery
+2025-03-24T10:44:52.307+05:45  INFO 5536 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:44:52.312+05:45  INFO 5536 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:44:52.317+05:45 ERROR 5536 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Battery with name Test Battery already exists
+2025-03-24T10:44:52.321+05:45 ERROR 5536 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Error while saving battery: Battery with the same name already exists
+2025-03-24T10:45:16.910+05:45  INFO 22892 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 22892 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:45:16.913+05:45 DEBUG 22892 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:45:16.914+05:45  INFO 22892 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:45:22.951+05:45  INFO 22892 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.592 seconds (process running for 6.967)
+2025-03-24T10:45:39.819+05:45  INFO 22892 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:45:39.827+05:45  INFO 22892 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:45:40.005+05:45  INFO 22892 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T10:45:40.012+05:45 ERROR 22892 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Failed to instantiate instance of destination com.example.VirtualPowerPlant.dto.BatteryDTO. Ensure that com.example.VirtualPowerPlant.dto.BatteryDTO has a non-private no-argument constructor.
+
+1 error] with root cause
+
+java.lang.NoSuchMethodException: com.example.VirtualPowerPlant.dto.BatteryDTO.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3585) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[na:na]
+	at org.modelmapper.internal.MappingEngineImpl.instantiate(MappingEngineImpl.java:339) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.createDestination(MappingEngineImpl.java:354) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.typeMap(MappingEngineImpl.java:141) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:115) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:72) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.mapInternal(ModelMapper.java:589) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:422) ~[modelmapper-3.2.1.jar:na]
+	at com.example.VirtualPowerPlant.service.BatteryImp.save(BatteryImp.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar:6.2.5]
+	at com.example.VirtualPowerPlant.service.BatteryImp$$SpringCGLIB$$0.save(<generated>) ~[classes/:na]
+	at com.example.VirtualPowerPlant.controller.VirtualPowerPlantController.addBattery(VirtualPowerPlantController.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-03-24T10:46:57.599+05:45  INFO 24008 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 24008 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:46:57.603+05:45 DEBUG 24008 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:46:57.604+05:45  INFO 24008 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:47:03.496+05:45  INFO 24008 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.435 seconds (process running for 6.807)
+2025-03-24T10:47:19.126+05:45  INFO 13220 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 13220 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:47:19.129+05:45 DEBUG 13220 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:47:19.130+05:45  INFO 13220 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:47:24.629+05:45  INFO 13220 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.061 seconds (process running for 6.438)
+2025-03-24T10:47:31.942+05:45  INFO 13220 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:47:31.955+05:45  INFO 13220 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:47:32.175+05:45  INFO 13220 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T10:47:32.198+05:45  INFO 13220 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Successfully added battery with name: Test Battery
+2025-03-24T10:47:33.826+05:45  INFO 13220 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:47:33.831+05:45  INFO 13220 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:47:33.841+05:45 ERROR 13220 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Battery with name Test Battery already exists
+2025-03-24T10:47:33.844+05:45 ERROR 13220 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Error while saving battery: Battery with the same name already exists
+2025-03-24T10:52:32.541+05:45  INFO 12964 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 12964 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:52:32.544+05:45 DEBUG 12964 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:52:32.545+05:45  INFO 12964 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:52:37.582+05:45  INFO 12964 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 5.565 seconds (process running for 5.932)
+2025-03-24T10:52:52.830+05:45  INFO 12964 --- [http-nio-8080-exec-1] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:52:52.840+05:45  INFO 12964 --- [http-nio-8080-exec-1] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:52:53.038+05:45  INFO 12964 --- [http-nio-8080-exec-1] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T10:52:53.048+05:45 ERROR 12964 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Failed to instantiate instance of destination com.example.VirtualPowerPlant.dto.BatteryDTO. Ensure that com.example.VirtualPowerPlant.dto.BatteryDTO has a non-private no-argument constructor.
+
+1 error] with root cause
+
+java.lang.NoSuchMethodException: com.example.VirtualPowerPlant.dto.BatteryDTO.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3585) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[na:na]
+	at org.modelmapper.internal.MappingEngineImpl.instantiate(MappingEngineImpl.java:339) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.createDestination(MappingEngineImpl.java:354) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.typeMap(MappingEngineImpl.java:141) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:115) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:72) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.mapInternal(ModelMapper.java:589) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:422) ~[modelmapper-3.2.1.jar:na]
+	at com.example.VirtualPowerPlant.service.BatteryImp.save(BatteryImp.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar:6.2.5]
+	at com.example.VirtualPowerPlant.service.BatteryImp$$SpringCGLIB$$0.save(<generated>) ~[classes/:na]
+	at com.example.VirtualPowerPlant.controller.VirtualPowerPlantController.addBattery(VirtualPowerPlantController.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-03-24T10:56:36.716+05:45  INFO 2536 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 2536 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:56:36.719+05:45 DEBUG 2536 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:56:36.720+05:45  INFO 2536 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:56:42.131+05:45  INFO 2536 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 5.958 seconds (process running for 6.314)
+2025-03-24T10:56:45.953+05:45  INFO 2536 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:56:45.961+05:45  INFO 2536 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:56:46.172+05:45  INFO 2536 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T10:56:46.181+05:45 ERROR 2536 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Failed to instantiate instance of destination com.example.VirtualPowerPlant.dto.BatteryDTO. Ensure that com.example.VirtualPowerPlant.dto.BatteryDTO has a non-private no-argument constructor.
+
+1 error] with root cause
+
+java.lang.NoSuchMethodException: com.example.VirtualPowerPlant.dto.BatteryDTO.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3585) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[na:na]
+	at org.modelmapper.internal.MappingEngineImpl.instantiate(MappingEngineImpl.java:339) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.createDestination(MappingEngineImpl.java:354) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.typeMap(MappingEngineImpl.java:141) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:115) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:72) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.mapInternal(ModelMapper.java:589) ~[modelmapper-3.2.1.jar:na]
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:422) ~[modelmapper-3.2.1.jar:na]
+	at com.example.VirtualPowerPlant.service.BatteryImp.save(BatteryImp.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar:6.2.5]
+	at com.example.VirtualPowerPlant.service.BatteryImp$$SpringCGLIB$$0.save(<generated>) ~[classes/:na]
+	at com.example.VirtualPowerPlant.controller.VirtualPowerPlantController.addBattery(VirtualPowerPlantController.java:41) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-03-24T10:57:16.900+05:45  INFO 19396 --- [main] c.e.V.VirtualPowerPlantApplication       : Starting VirtualPowerPlantApplication using Java 17.0.13 with PID 19396 (C:\Users\ACER\Downloads\VirtualPowerPlant\VirtualPowerPlant\target\classes started by ACER in C:\Users\ACER\Downloads\VirtualPowerPlant)
+2025-03-24T10:57:16.903+05:45 DEBUG 19396 --- [main] c.e.V.VirtualPowerPlantApplication       : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-24T10:57:16.903+05:45  INFO 19396 --- [main] c.e.V.VirtualPowerPlantApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-24T10:57:22.567+05:45  INFO 19396 --- [main] c.e.V.VirtualPowerPlantApplication       : Started VirtualPowerPlantApplication in 6.262 seconds (process running for 6.663)
+2025-03-24T10:57:24.475+05:45  INFO 19396 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:57:24.489+05:45  INFO 19396 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:57:24.781+05:45  INFO 19396 --- [http-nio-8080-exec-2] c.e.V.service.BatteryImp                 : Successfully saved battery with ID: 1
+2025-03-24T10:57:24.807+05:45  INFO 19396 --- [http-nio-8080-exec-2] c.e.V.c.VirtualPowerPlantController      : Successfully added battery with name: Test Battery
+2025-03-24T10:57:27.119+05:45  INFO 19396 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Received request to add a battery: Test Battery
+2025-03-24T10:57:27.124+05:45  INFO 19396 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Attempting to save battery with name: Test Battery
+2025-03-24T10:57:27.132+05:45 ERROR 19396 --- [http-nio-8080-exec-3] c.e.V.service.BatteryImp                 : Battery with name Test Battery already exists
+2025-03-24T10:57:27.136+05:45 ERROR 19396 --- [http-nio-8080-exec-3] c.e.V.c.VirtualPowerPlantController      : Error while saving battery: Battery with the same name already exists
